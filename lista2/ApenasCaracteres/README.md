@@ -6,17 +6,6 @@
 
 3)	Uma cadeia de caracteres é dita ser um palíndromo quando pode ser lida nos dois sentidos com o mesmo resultado, por exemplo, as palavras “ama”, “ovo” e “abcba”. Implemente a função isPalindromo() da classe Palavras.java que recebe um vetor de caracteres representando uma palavra e retorna true se os caracteres representarem um palíndromo, ou false, caso contrário. Essa função deve ser recursiva.
 
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
