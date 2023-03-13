@@ -1,7 +1,7 @@
 public class Palavras {
 
-    public boolean isPalindromo(char[] palavra) {
-        return isPalindromoRecursivo(palavra, 0, palavra.length - 1);
+    public boolean isPalindromo(String word) {
+        return isPalindromoRecursivo(word.toCharArray(), 0, word.toCharArray().length - 1);
     }
             
     private static boolean isPalindromoRecursivo(char[] palavra, int inicio, int fim) {
