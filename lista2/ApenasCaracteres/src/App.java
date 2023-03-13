@@ -4,7 +4,6 @@ import java.util.Stack;
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(System.in); // Declaration Scanner
-        Stack<Integer> binary = new Stack<Integer>(); // Stack Declaration
         Palavras pl = new Palavras(); // Obj Palavras declaration 
         Binaria bi = new Binaria(); // Obj Binaria declaration
         ApenasCaracteres ap = new ApenasCaracteres(); // obj ApenasCaracteres declaration
@@ -22,13 +21,13 @@ public class App {
                 case "2":
                     System.out.println("Digite um decimal para binario: ");
                     str = sc.nextLine(); // Read user input
-                    System.out.println(bi.baseBinaria(binary, Integer.parseInt(str)));
+                    System.out.println(bi.baseBinaria(str));
                     i = 1; // Terminate while
                     break; // Skip rest switch
                 case "3":
                     System.out.println("Digite um palindromo: ");
                     str = sc.nextLine(); // Read user input
-                    System.out.println(pl.isPalindromo(str.toCharArray()));
+                    System.out.println(pl.isPalindromo(str));
                     i = 1; // Terminate while
                     break; // Skip rest switch
                 default: 
