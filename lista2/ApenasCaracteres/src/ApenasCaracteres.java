@@ -1,8 +1,13 @@
 public class ApenasCaracteres {
-    public static boolean isNumero(String str) {
+
+    public boolean isNumero(String str) {
+        return isNumeroRecursiva(str);
+    }
+
+    private static boolean isNumeroRecursiva(String str) {
         if (str.isEmpty()) return true; // Case number ended 
         char primeiro = str.charAt(0);
         if (!Character.isDigit(primeiro)) return false;
-        return isNumero(str.substring(1)); // Case recursive for the rest of numbers
+        return isNumeroRecursiva(str.substring(1)); // Case recursive for the rest of numbers
     }
 }
