@@ -25,8 +25,6 @@ public static Palavra criaPalavra(String str) {
           consoantes.add(Character.toLowerCase(c));
       }
   }
-
-
   return new Palavra(vogais.toArray(new Character[0]), consoantes.toArray(new Character[0]));
 }
 
@@ -35,5 +33,4 @@ public static void main() {
   Palavra palavra = criaPalavra(str);
   System.out.println("Vogais: " + Arrays.toString(palavra.vogal));
   System.out.println("Consoantes: " + Arrays.toString(palavra.consonant));
-
 }
